@@ -1,0 +1,5 @@
+div {
+    display: flex;
+    flex: 0 0 6.25%; /* fixed size of each flex item taking 1/16th of the row size */
+    flex-wrap: wrap; /* wrap flex items to new line */
+}
