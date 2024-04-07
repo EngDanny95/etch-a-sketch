@@ -8,5 +8,6 @@ div {
 }
 
 #container{
-    border: 0;
+    border: 0; /* since the height of the container division is the same
+    as the rest of the divs, it makes the first row looks thicker in borders */
 }
