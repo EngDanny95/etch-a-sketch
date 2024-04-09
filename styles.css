@@ -1,13 +1,15 @@
 div {
     display: flex;
-    flex: 0 0 6.25%; /* fixed size of each flex item taking 1/16th of the row size */
+    --x : 1; /* create css variable that can be manipulated in js */
+    flex-basis: calc(var(--x)*100%); /* css recognizes unit multiplication */
     flex-wrap: wrap; /* wrap flex items to new line */
     border: 1px solid black;
-    height: 50px;
     box-sizing: border-box; /* makes boarder not affect the size of the divs */
 }
 
 #container{
     border: 0; /* since the height of the container division is the same
     as the rest of the divs, it makes the first row looks thicker in borders */
+    height: 95vh; /* occupy the full height of the screen */
+    width: 100%; 
 }
