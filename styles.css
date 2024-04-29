@@ -1,15 +1,25 @@
 div {
     display: flex;
-    --x : 1; /* create css variable that can be manipulated in js */
-    flex-basis: calc(var(--x)*100%); /* css recognizes unit multiplication */
-    flex-wrap: wrap; /* wrap flex items to new line */
+    --x: 1;
+    /* create css variable that can be manipulated in js */
+    flex-basis: calc(var(--x)*100%);
+    /* css recognizes unit multiplication */
+    flex-wrap: wrap;
+    /* wrap flex items to new line */
     border: 1px solid black;
-    box-sizing: border-box; /* makes boarder not affect the size of the divs */
+    box-sizing: border-box;
+    /* makes boarder not affect the size of the divs */
+    --rcss:1;
+    --gcss:1;
+    --bcss:1;
+    --opacitycss:100%;
 }
 
-#container{
-    border: 0; /* since the height of the container division is the same
+#container {
+    border: 0;
+    /* since the height of the container division is the same
     as the rest of the divs, it makes the first row looks thicker in borders */
-    height: 94vh; /* occupy the full height of the screen */
-    width: 100%; 
+    height: 94vh;
+    /* occupy the full height of the screen */
+    width: 100%;
 }
